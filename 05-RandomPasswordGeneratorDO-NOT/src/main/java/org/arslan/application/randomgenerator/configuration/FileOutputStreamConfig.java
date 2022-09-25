@@ -6,7 +6,6 @@ import org.springframework.context.annotation.Configuration;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
 
 @Configuration
 public class FileOutputStreamConfig {
@@ -17,13 +16,13 @@ public class FileOutputStreamConfig {
     @Value("${filename2}")
     private String filename2;
 
-    @Bean("first")
-    public FileOutputStream getFirst() throws IOException {
+    @Bean("fileOutputStream.first")
+    public FileOutputStream getFirst() throws FileNotFoundException {
         return new FileOutputStream(filename1,true);
     }
 
-    @Bean("second")
-    public FileOutputStream getSecond() throws IOException{
+    @Bean("fileOutputStream.second")
+    public FileOutputStream getSecond() throws FileNotFoundException {
         return new FileOutputStream(filename2,true);
     }
 
