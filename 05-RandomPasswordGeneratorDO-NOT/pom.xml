@@ -10,9 +10,9 @@
 	</parent>
 
 	<groupId>org.arslan</groupId>
-	<artifactId>RandomGeneratorDO-NOT</artifactId>
+	<artifactId>RandomPasswordGeneratorDO-NOT</artifactId>
 	<version>1.0.0</version>
-	<name>RandomGeneratorDO-NOT</name>
+	<name>RandomPasswordGeneratorDO-NOT</name>
 
 	<properties>
 		<java.version>11</java.version>
