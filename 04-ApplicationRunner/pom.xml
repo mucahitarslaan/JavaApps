@@ -23,22 +23,12 @@
 			<id>arslanapp</id>
 			<url>https://github.com/mucahitarslaan/arslanapp.git</url>
 		</repository>
-		<repository>
-			<id>javaapp1-feb-2021</id>
-			<url>http://raw.github.com/oguzkaran/javaapp1-feb-2021-maven-repo/main</url>
-		</repository>
 	</repositories>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.csystem</groupId>
-			<artifactId>org-csystem-util-console</artifactId>
-			<version>4.0.0</version>
 		</dependency>
 
 		<dependency>

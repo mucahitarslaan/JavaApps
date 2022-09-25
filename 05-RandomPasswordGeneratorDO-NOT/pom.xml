@@ -23,10 +23,6 @@
 			<id>arslanapp</id>
 			<url>https://github.com/mucahitarslaan/arslanapp.git</url>
 		</repository>
-		<repository>
-			<id>javaapp1-feb-2021</id>
-			<url>http://raw.github.com/oguzkaran/javaapp1-feb-2021-maven-repo/main</url>
-		</repository>
 	</repositories>
 
 	<dependencies>
