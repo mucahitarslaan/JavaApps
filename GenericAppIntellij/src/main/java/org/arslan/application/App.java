@@ -1,4 +1,4 @@
-package org.arslan.application.createobjectauto;
+package org.arslan.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
