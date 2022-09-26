@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="RandomPasswordGeneratorDO-NOT" />
+        <module name="06-RandomPasswordGenerator" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="06-RandomPasswordGenerator" options="-parameters" />
       <module name="RandomPasswordGeneratorDO-NOT" options="-parameters" />
     </option>
   </component>

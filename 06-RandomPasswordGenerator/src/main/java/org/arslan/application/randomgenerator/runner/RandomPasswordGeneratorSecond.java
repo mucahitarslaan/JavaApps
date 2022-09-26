@@ -12,12 +12,11 @@ import java.io.BufferedWriter;
 import java.util.Random;
 
 @Component
-public class RandomPasswordGeneratorFirst implements ApplicationRunner {
+public class RandomPasswordGeneratorSecond implements ApplicationRunner {
 
     private BufferedWriter bufferedWriter;
     private Random random;
     private Scheduler scheduler;
-
 
     @Value("${count}")
     private int count;
@@ -28,12 +27,13 @@ public class RandomPasswordGeneratorFirst implements ApplicationRunner {
     @Value("${initial}")
     private int initial;
 
-    public void schedulerCallback()
+    private void schedulerCallback()
     {
         try {
             if (count == initial)
                 scheduler.cancel();
             ++initial;
+
             bufferedWriter.write(StringUtil.getRandomTextEN(random,10) + "\r\n");
             bufferedWriter.flush();
 
@@ -43,11 +43,12 @@ public class RandomPasswordGeneratorFirst implements ApplicationRunner {
         }
     }
 
-    public RandomPasswordGeneratorFirst(@Qualifier("bufferedWriter.first") BufferedWriter bufferedWriter, Random random, Scheduler scheduler) {
+    public RandomPasswordGeneratorSecond(@Qualifier("bufferedWriter.second") BufferedWriter bufferedWriter, Random random, Scheduler scheduler) {
         this.bufferedWriter = bufferedWriter;
         this.random = random;
         this.scheduler = scheduler;
     }
+
 
     @Override
     public void run(ApplicationArguments args) throws Exception {

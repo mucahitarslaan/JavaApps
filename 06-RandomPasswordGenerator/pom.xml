@@ -10,9 +10,9 @@
 	</parent>
 
 	<groupId>org.arslan</groupId>
-	<artifactId>RandomPasswordGeneratorDO-NOT</artifactId>
+	<artifactId>RandomPasswordGenerator</artifactId>
 	<version>1.0.0</version>
-	<name>RandomPasswordGeneratorDO-NOT</name>
+	<name>RandomPasswordGenerator</name>
 
 	<properties>
 		<java.version>11</java.version>
@@ -23,6 +23,12 @@
 			<id>arslanapp</id>
 			<url>https://github.com/mucahitarslaan/arslanapp.git</url>
 		</repository>
+
+		<repository>
+			<id>javaapp1-feb-2021</id>
+			<url>https://raw.github.com/oguzkaran/javaapp1-feb-2021-maven-repo/main</url>
+		</repository>
+
 	</repositories>
 
 	<dependencies>
@@ -41,6 +47,12 @@
 			<groupId>org.csystem</groupId>
 			<artifactId>org-csystem-util</artifactId>
 			<version>4.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.csystem</groupId>
+			<artifactId>org-csystem-util-scheduler</artifactId>
+			<version>4.0.1</version>
 		</dependency>
 
 		<dependency>
