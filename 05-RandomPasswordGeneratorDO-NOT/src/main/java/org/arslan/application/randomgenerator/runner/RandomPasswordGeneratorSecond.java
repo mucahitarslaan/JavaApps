@@ -10,10 +10,10 @@ import org.springframework.stereotype.Component;
 import java.io.BufferedWriter;
 
 @Component
-public class RandomGeneratorPasswordSecond implements ApplicationRunner {
+public class RandomPasswordGeneratorSecond implements ApplicationRunner {
     private final BufferedWriter bufferedWriter;
 
-    public RandomGeneratorPasswordSecond(@Qualifier("bufferedWriter.second") BufferedWriter bufferedWriter) {
+    public RandomPasswordGeneratorSecond(@Qualifier("bufferedWriter.second") BufferedWriter bufferedWriter) {
         this.bufferedWriter = bufferedWriter;
     }
 
