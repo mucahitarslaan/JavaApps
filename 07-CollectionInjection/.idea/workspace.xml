@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6e76508-7e16-42ad-b3fd-f9017a69fbbe" name="Changes" comment="demo" />
+    <list default="true" id="fe3b3158-237a-42d2-b3ab-0021a8a43da5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -19,15 +29,11 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2EgADzNW65cn2x3p2YyHVRZKGFn" />
+  <component name="ProjectId" id="2FJ8ALM4VwtKq849B5hCVuxSDaz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,29 +53,25 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "c0d1927e17c8c55f5277d6c80870c318"
+    "spring.configuration.checksum": "cee3b162e75f89b74ff5462e5c841c90"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.arslan.application.calculator.operation" />
+      <recent name="org.arslan.application.calculator.configuration" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.App">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="GenericAppIntelliJ" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="07-CollectionInjection" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.arslan.application.App" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="GenericAppIntelliJ" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,50 +79,29 @@
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <option name="ENABLE_LAUNCH_OPTIMIZATION" value="false" />
-      <module name="GenericApp" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.arslan.application.App" />
+      <module name="07-CollectionInjection" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.arslan.application.calculator.App" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.App" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f6e76508-7e16-42ad-b3fd-f9017a69fbbe" name="Changes" comment="" />
-      <created>1663006739015</created>
+      <changelist id="fe3b3158-237a-42d2-b3ab-0021a8a43da5" name="Changes" comment="" />
+      <created>1664198682386</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1663006739015</updated>
-      <workItem from="1663006740395" duration="507000" />
-      <workItem from="1663029353716" duration="1730000" />
-      <workItem from="1663031370259" duration="12000" />
-      <workItem from="1663031402200" duration="4476000" />
-      <workItem from="1663036159296" duration="14000" />
-      <workItem from="1663039636680" duration="24000" />
-      <workItem from="1663039696715" duration="30000" />
-      <workItem from="1663040301396" duration="13000" />
-      <workItem from="1663215651250" duration="21000" />
-      <workItem from="1664198501133" duration="179000" />
+      <updated>1664198682386</updated>
+      <workItem from="1664198685005" duration="302000" />
+      <workItem from="1664199079529" duration="14105000" />
     </task>
-    <task id="LOCAL-00001" summary="demo">
-      <created>1663032042839</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1663032042839</updated>
-    </task>
-    <task id="LOCAL-00002" summary="demo">
-      <created>1663032148890</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1663032148890</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,9 +117,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo" />
   </component>
 </project>
