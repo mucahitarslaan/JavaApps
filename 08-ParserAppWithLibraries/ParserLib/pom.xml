@@ -10,9 +10,8 @@
 	</parent>
 
 	<groupId>com.arslan</groupId>
-	<artifactId>GenericLib</artifactId>
+	<artifactId>com-arslan-library-parser</artifactId>
 	<version>1.0.0</version>
-	<description>Generic Library Provider</description>
 
 	<properties>
 		<java.version>11</java.version>
