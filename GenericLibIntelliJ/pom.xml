@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>org.csystem</groupId>
+	<groupId>com.arslan</groupId>
 	<artifactId>GenericLib</artifactId>
 	<version>1.0.0</version>
 	<description>Generic Library Provider</description>
