@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.arslan</groupId>
+	<groupId>com.mucahitarslan</groupId>
 	<artifactId>GenericLib</artifactId>
 	<version>1.0.0</version>
 	<description>Generic Library Provider</description>

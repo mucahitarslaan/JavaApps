@@ -1,7 +1,7 @@
-org/arslan/applicationrunner/configuration/ThirdOperationApplicationRunnerConfig1.class
-org/arslan/applicationrunner/runner/SecondOperationRunner.class
-org/arslan/applicationrunner/component/ThirdOperation.class
-org/arslan/applicationrunner/App.class
-org/arslan/applicationrunner/configuration/ThirdOperationApplicationRunnerConfig2.class
-org/arslan/applicationrunner/runner/FirstOperationRunner.class
-org/arslan/applicationrunner/component/SecondOperation.class
+com/mucahitarslan/applicationrunner/component/ThirdOperation.class
+com/mucahitarslan/applicationrunner/configuration/ThirdOperationApplicationRunnerConfig1.class
+com/mucahitarslan/applicationrunner/runner/FirstOperationRunner.class
+com/mucahitarslan/applicationrunner/runner/SecondOperationRunner.class
+com/mucahitarslan/applicationrunner/component/SecondOperation.class
+com/mucahitarslan/applicationrunner/configuration/ThirdOperationApplicationRunnerConfig2.class
+com/mucahitarslan/applicationrunner/App.class

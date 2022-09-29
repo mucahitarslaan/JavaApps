@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: org.arslan.application.AppTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.32 s <<< FAILURE! - in org.arslan.application.AppTests
+org.arslan.application.AppTests  Time elapsed: 0.318 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+

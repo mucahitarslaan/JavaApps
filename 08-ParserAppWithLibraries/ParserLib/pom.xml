@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>com.arslan</groupId>
-	<artifactId>com-arslan-library-parser</artifactId>
+	<groupId>com.mucahitarslan</groupId>
+	<artifactId>com-mucahitarslan-library-parser</artifactId>
 	<version>1.0.0</version>
 
 	<properties>

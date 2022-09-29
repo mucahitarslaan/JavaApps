@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>org.arslan</groupId>
+	<groupId>com.mucahitarslan</groupId>
 	<artifactId>CollectionInjection</artifactId>
 	<version>1.0.0</version>
 	<name>CollectionInjection</name>

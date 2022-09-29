@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6bf2718-6ce2-403a-86f6-2a1ca53ce54e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../01-CreateObjectAutoWithComponent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-CreateObjectAutoWithComponent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-CreateObjectAutoWithComponent/src/main/java/org/arslan/application/createobjectauto/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-CreateObjectAutoWithComponent/src/main/java/com/mucahitarslan/application/createobjectauto/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-CreateObjectAutoWithComponent/src/main/java/org/arslan/application/createobjectauto/component/DateAndTimeDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-CreateObjectAutoWithComponent/src/main/java/com/mucahitarslan/application/createobjectauto/component/DateAndTimeDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-CreateObjectAutoWithComponent/src/main/java/org/arslan/application/createobjectauto/component/DateTimeDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-CreateObjectAutoWithComponent/src/main/java/com/mucahitarslan/application/createobjectauto/component/DateTimeDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01-CreateObjectAutoWithComponent/src/test/java/org/arslan/application/createobjectauto/AppTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-DependencyInjection/src/test/java/com/mucahitarslan/application/dependencyinjection/AppTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-DependencyInjection/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../02-DependencyInjection/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/org/arslan/application/dependencyinjection/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/com/mucahitarslan/application/dependencyinjection/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/org/arslan/application/dependencyinjection/component/AgeInfoDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/com/mucahitarslan/application/dependencyinjection/component/AgeInfoDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/org/arslan/application/dependencyinjection/component/BirthDateInfoDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/com/mucahitarslan/application/dependencyinjection/component/BirthDateInfoDisplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/org/arslan/application/dependencyinjection/component/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/com/mucahitarslan/application/dependencyinjection/component/DateTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/org/arslan/application/dependencyinjection/component/DateTimeConstructorInjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/com/mucahitarslan/application/dependencyinjection/component/DateTimeConstructorInjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/org/arslan/application/dependencyinjection/component/DateTimeFieldInjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/com/mucahitarslan/application/dependencyinjection/component/DateTimeFieldInjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/org/arslan/application/dependencyinjection/component/DateTimeSetterInjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/com/mucahitarslan/application/dependencyinjection/component/DateTimeSetterInjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/org/arslan/application/dependencyinjection/configuration/DateTimeConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../02-DependencyInjection/src/main/java/com/mucahitarslan/application/dependencyinjection/configuration/DateTimeConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02-DependencyInjection/src/test/java/org/arslan/application/dependencyinjection/AppTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-CreateObjectAutoWithComponent/src/test/java/com/mucahitarslan/application/createobjectauto/AppTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arslan/application/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mucahitarslan/application/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arslan/application/component/FirstOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mucahitarslan/application/component/FirstOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arslan/application/component/SecondOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mucahitarslan/application/component/SecondOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/arslan/application/component/ThirdOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mucahitarslan/application/component/ThirdOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/arslan/application/AppTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mucahitarslan/application/AppTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07-CollectionInjection/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../07-CollectionInjection/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ParserAppWithLibraries/BoraParserApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ParserAppWithLibraries/BoraParserApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/arslan/library/parser/CharArraySource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/mucahitarslan/library/parser/CharArraySource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/arslan/library/parser/ComponentName.java" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/mucahitarslan/library/parser/ComponentName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/arslan/library/parser/FileSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/mucahitarslan/library/parser/FileSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/arslan/library/parser/ISource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/mucahitarslan/library/parser/ISource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/arslan/library/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/mucahitarslan/library/parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/arslan/library/parser/StringSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../08-ParserAppWithLibraries/ParserLib/src/main/java/com/mucahitarslan/library/parser/StringSource.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FReNTvwupzj7sF49ZehzvChZJH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/admin/Documents/JavaApps/03-ValueAnnotation"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.App">
+    <configuration name="App (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ValueAnnotation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mucahitarslan.application.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ValueAnnotation" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.arslan.application.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6bf2718-6ce2-403a-86f6-2a1ca53ce54e" name="Changes" comment="" />
+      <created>1664459284060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664459284060</updated>
+      <workItem from="1664459285431" duration="175000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>org.arslan</groupId>
+	<groupId>com.mucahitarslan</groupId>
 	<artifactId>RandomPasswordGeneratorDO-NOT</artifactId>
 	<version>1.0.0</version>
 	<name>RandomPasswordGeneratorDO-NOT</name>
@@ -33,14 +33,10 @@
 
 		<dependency>
 			<groupId>org.csystem</groupId>
-			<artifactId>org-csystem-util-console</artifactId>
-			<version>4.0.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.csystem</groupId>
 			<artifactId>org-csystem-util</artifactId>
 			<version>4.0.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/org-csystem-util-4.0.1.jar</systemPath>
 		</dependency>
 
 		<dependency>

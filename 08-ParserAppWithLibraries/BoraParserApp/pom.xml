@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>org.arslan</groupId>
+	<groupId>org.mucahitarslan</groupId>
 	<artifactId>BoraParserApplication</artifactId>
 	<version>1.0.0</version>
 	<name>BoraParserApplication</name>
@@ -32,11 +32,11 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.arslan</groupId>
-			<artifactId>com-arslan-library-parser</artifactId>
+			<groupId>com.mucahitarslan</groupId>
+			<artifactId>com-mucahitarslan-library-parser</artifactId>
 			<version>1.0.0</version>
 			<scope>system</scope>
-			<systemPath>${basedir}/libs/com-arslan-library-parser-1.0.0.jar</systemPath>
+			<systemPath>${basedir}/libs/com-mucahitarslan-library-parser-1.0.0.jar</systemPath>
 		</dependency>
 
 		<dependency>

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>org.arslan</groupId>
+	<groupId>com.mucahitarslan</groupId>
 	<artifactId>ValueAnnotation</artifactId>
 	<version>1.0.0</version>
 	<name>ValueAnnotation</name>
@@ -20,12 +20,13 @@
 
 	<repositories>
 		<repository>
-			<id>arslanapp</id>
-			<url>https://github.com/mucahitarslaan/arslanapp.git</url>
-		</repository>
-		<repository>
 			<id>javaapp1-feb-2021</id>
 			<url>http://raw.github.com/oguzkaran/javaapp1-feb-2021-maven-repo/main</url>
+		</repository>
+
+		<repository>
+			<id>arslanapp</id>
+			<url>https://github.com/mucahitarslaan/arslanapp.git</url>
 		</repository>
 	</repositories>
 
@@ -39,7 +40,10 @@
 			<groupId>org.csystem</groupId>
 			<artifactId>org-csystem-util-console</artifactId>
 			<version>4.0.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/org-csystem-util-console-2.0.0.jar</systemPath>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
