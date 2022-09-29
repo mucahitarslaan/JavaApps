@@ -1,4 +1,5 @@
-package com.borasahin.application.parser.configuration;
+package com.beyzayazici.lib.parser.configuration;
+
 
 import org.csystem.library.parser.ComponentName;
 import org.csystem.util.string.StringUtil;

@@ -20,8 +20,8 @@
 
 	<repositories>
 		<repository>
-			<id>arslanapp</id>
-			<url>https://github.com/mucahitarslaan/arslanapp.git</url>
+			<id>javaapp1-feb-2021</id>
+			<url>https://raw.github.com/oguzkaran/javaapp1-feb-2021-maven-repo/main</url>
 		</repository>
 	</repositories>
 
@@ -31,20 +31,17 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+
 		<dependency>
-			<groupId>com.mucahitarslan</groupId>
-			<artifactId>com-mucahitarslan-library-parser</artifactId>
+			<groupId>org.csystem</groupId>
+			<artifactId>org-csystem-library-parser</artifactId>
 			<version>1.0.0</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/libs/com-mucahitarslan-library-parser-1.0.0.jar</systemPath>
 		</dependency>
 
 		<dependency>
 			<groupId>org.csystem</groupId>
 			<artifactId>org-csystem-util</artifactId>
-			<version>4.0.1</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/libs/org-csystem-util-4.0.1.jar</systemPath>
+			<version>4.0.0</version>
 		</dependency>
 
 		<dependency>

@@ -10,18 +10,43 @@
 	</parent>
 
 	<groupId>com.beyzayazici</groupId>
-	<artifactId>BeyzaParserLib</artifactId>
+	<artifactId>com-beyzayazici-library-parser</artifactId>
 	<version>1.0.0</version>
-	<description>BeyzaParserLib</description>
+	<description>com-beyzayazici-library-parser</description>
 
 	<properties>
 		<java.version>11</java.version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>javaapp1-feb-2021</id>
+			<url>https://raw.github.com/oguzkaran/javaapp1-feb-2021-maven-repo/main</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.csystem</groupId>
+			<artifactId>org-csystem-util</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.csystem</groupId>
+			<artifactId>org-csystem-util-console</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.csystem</groupId>
+			<artifactId>org-csystem-library-parser</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 
 		<dependency>

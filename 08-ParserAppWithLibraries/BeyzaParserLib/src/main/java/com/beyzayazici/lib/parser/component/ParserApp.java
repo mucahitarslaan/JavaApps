@@ -1,11 +1,11 @@
-package com.borasahin.application.parser.component;
+package com.beyzayazici.lib.parser.component;
+
 
 import org.csystem.library.parser.ISource;
 import org.csystem.library.parser.Parser;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;
-
 
 @Component
 public class ParserApp {
