@@ -1,0 +1,5 @@
+com/borasahin/application/parser/ParserApplication.class
+com/borasahin/application/parser/component/ParserApp.class
+com/borasahin/application/parser/configuration/SourceInjectBeanConfig.class
+com/borasahin/application/parser/runner/ParserAppRunner.class
+com/borasahin/application/parser/configuration/RandomConfig.class
