@@ -10,9 +10,9 @@
 	</parent>
 
 	<groupId>org.mucahitarslan</groupId>
-	<artifactId>ServletRequestInformation</artifactId>
+	<artifactId>ServletRequestInformationPlainText</artifactId>
 	<version>1.0.0</version>
-	<name>ServletRequestInformation</name>
+	<name>ServletRequestInformationPlainText</name>
 
 	<properties>
 		<java.version>11</java.version>
