@@ -21,12 +21,13 @@ public class ClientInformationController {
     }
 
     @GetMapping("/client")
-    public ClientInfo getClientInfo()
+    public String getClientInfo()
     {
         return m_clientInfo.setLocalAddress(m_request.getLocalAddr())
                 .setRemoteAddress(m_request.getRemoteAddr())
                 .setRemoteHost(m_request.getRemoteHost())
                 .setLocalPort(m_request.getLocalPort())
-                .setRemotePort(m_request.getRemotePort());
+                .setRemotePort(m_request.getRemotePort())
+                .toString();
     }
 }
