@@ -10,9 +10,9 @@
 	</parent>
 
 	<groupId>com.mucahitarslan</groupId>
-	<artifactId>MovieServiceApplicationJDBC</artifactId>
+	<artifactId>MovieRestServiceApplication</artifactId>
 	<version>1.0.0</version>
-	<name>MovieServiceApplicationJDBC</name>
+	<name>MovieRestServiceApplication</name>
 
 	<properties>
 		<java.version>11</java.version>
