@@ -10,9 +10,9 @@
 	</parent>
 
 	<groupId>com.mucahitarslan</groupId>
-	<artifactId>GenericAppIntellij</artifactId>
+	<artifactId>MovieServiceApplicationJDBC</artifactId>
 	<version>1.0.0</version>
-	<name>GenericAppIntellij</name>
+	<name>MovieServiceApplicationJDBC</name>
 
 	<properties>
 		<java.version>11</java.version>
@@ -20,15 +20,44 @@
 
 	<repositories>
 		<repository>
-			<id>arslanapp</id>
-			<url>https://github.com/mucahitarslaan/arslanapp.git</url>
+			<id>javaapp1-feb-2021-maven-repo</id>
+			<url>https://github.com/oguzkaran/javaapp1-feb-2021-maven-repo.git</url>
 		</repository>
 	</repositories>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.csystem</groupId>
+			<artifactId>org-csystem-util-console</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.csystem</groupId>
+			<artifactId>org-csystem-util-data</artifactId>
+			<version>4.0.1</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.5.0</version>
 		</dependency>
 
 		<dependency>
