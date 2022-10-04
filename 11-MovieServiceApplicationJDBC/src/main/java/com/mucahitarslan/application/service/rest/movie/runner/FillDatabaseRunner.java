@@ -12,6 +12,7 @@ import java.time.LocalDate;
 
 @Component
 public class FillDatabaseRunner implements ApplicationRunner {
+
     private final IMovieRepository movieRepository;
 
     public FillDatabaseRunner(IMovieRepository movieRepository) {
@@ -20,9 +21,9 @@ public class FillDatabaseRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        Movie movie = new Movie();
+   /*     Movie movie = new Movie();
 
-        movie.setName("Inseption");
+        movie.setName("Inception");
         movie.setSceneTime(LocalDate.now());
         movie.setRating(100000);
         movie.setCost(new BigDecimal(1000000));
@@ -32,5 +33,7 @@ public class FillDatabaseRunner implements ApplicationRunner {
 
         Console.writeLine("id:%d",movie.getId());
         Console.writeLine("Count:%d", movieRepository.count());
+
+    */
     }
 }

@@ -5,12 +5,12 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Movie {
-    public long id;
-    public String name;
-    public LocalDate sceneTime;
-    public long rating;
-    public BigDecimal cost;
-    public float imdb;
+    private long id;
+    private String name;
+    private LocalDate sceneTime;
+    private long rating;
+    private BigDecimal cost;
+    private float imdb;
 
     public long getId() {
         return id;
