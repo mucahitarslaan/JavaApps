@@ -16,8 +16,9 @@ import java.util.Optional;
 public class MovieRepository implements IMovieRepository{
 
     private static final String COUNT_SQL = "select count(*) from movies";
-    private static final String FIND_BY_MONTH_YEAR = "select - from movies where date_part('month', scene_time)= :month and date_part('year' , scene_time) = :year";
-    private static final String FIND_BY_YEAR = "select - from movies where date_part('year' , scene_time) = :year";
+    private static final String FIND_ALL_SQL = "select * from movies";
+    private static final String FIND_BY_MONTH_YEAR_SQL = "select - from movies where date_part('month', scene_time)= :month and date_part('year' , scene_time) = :year";
+    private static final String FIND_BY_YEAR_SQL = "select - from movies where date_part('year' , scene_time) = :year";
     private static final String SAVE_SQL = "insert into movies (name, scene_time, rating, cost, imdb) values (:name, :sceneTime, :rating, :cost, :imdb)";
     private final NamedParameterJdbcTemplate jdbcTemplate;
 
@@ -27,6 +28,21 @@ public class MovieRepository implements IMovieRepository{
             counts.add(resultSet.getLong(1));
         }while (resultSet.next());
     }
+
+    private static void fillMovies(ResultSet resultSet, ArrayList<Movie> movies) throws SQLException
+    {
+        do {
+            var id = resultSet.getLong(1);
+            var name = resultSet.getString(2);
+            var sceneTime = resultSet.getDate(3).toLocalDate();
+            var rating = resultSet.getLong(4);
+            var cost = resultSet.getBigDecimal(5);
+            var imdb = resultSet.getFloat(6);
+
+            movies.add(new Movie(id,name,sceneTime,rating,cost,imdb));
+        }while (resultSet.next());
+    }
+
     public MovieRepository(NamedParameterJdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
@@ -36,11 +52,22 @@ public class MovieRepository implements IMovieRepository{
     public long count() {
         var counts = new ArrayList<Long>();
 
-        jdbcTemplate.query(COUNT_SQL, (RowCallbackHandler) rs -> fillCounts(rs,counts));
+        jdbcTemplate.query(COUNT_SQL, (ResultSet rs)  -> fillCounts(rs,counts));
 
-        return counts.isEmpty() ? 0 : counts.get(0);
+        return counts.get(0);
 
     }
+
+
+    @Override
+    public Iterable<Movie> findAll() {
+        var movies = new ArrayList<Movie>();
+
+        jdbcTemplate.query(FIND_ALL_SQL, (ResultSet rs) -> fillMovies(rs,movies));
+
+        return movies;
+    }
+
 
     @Override
     public <S extends Movie> S save(S movie) {
@@ -81,12 +108,6 @@ public class MovieRepository implements IMovieRepository{
 
     @Override
     public boolean existsById(Long aLong) {
-        throw new UnsupportedOperationException();
-
-    }
-
-    @Override
-    public Iterable<Movie> findAll() {
         throw new UnsupportedOperationException();
 
     }

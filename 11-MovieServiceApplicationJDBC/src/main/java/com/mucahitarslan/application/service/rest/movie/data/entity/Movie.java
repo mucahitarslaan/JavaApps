@@ -12,6 +12,20 @@ public class Movie {
     private BigDecimal cost;
     private float imdb;
 
+    public Movie()
+    {
+
+    }
+
+    public Movie(long id, String name, LocalDate sceneTime, long rating, BigDecimal cost, float imdb) {
+        this.id = id;
+        this.name = name;
+        this.sceneTime = sceneTime;
+        this.rating = rating;
+        this.cost = cost;
+        this.imdb = imdb;
+    }
+
     public long getId() {
         return id;
     }
@@ -58,5 +72,10 @@ public class Movie {
 
     public void setImdb(float imdb) {
         this.imdb = imdb;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("[%d]%s-%s-%d-%s-%f",id,name,sceneTime,rating,cost,imdb);
     }
 }

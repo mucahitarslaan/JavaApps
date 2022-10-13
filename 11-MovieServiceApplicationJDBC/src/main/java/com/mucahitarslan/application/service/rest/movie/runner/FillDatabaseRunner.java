@@ -21,19 +21,8 @@ public class FillDatabaseRunner implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-   /*     Movie movie = new Movie();
 
-        movie.setName("Inception");
-        movie.setSceneTime(LocalDate.now());
-        movie.setRating(100000);
-        movie.setCost(new BigDecimal(1000000));
-        movie.setImdb(7.5F);
+        movieRepository.findAll().forEach(Console::writeLine);
 
-        movieRepository.save(movie);
-
-        Console.writeLine("id:%d",movie.getId());
-        Console.writeLine("Count:%d", movieRepository.count());
-
-    */
     }
 }
