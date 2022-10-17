@@ -68,6 +68,19 @@ public class MovieRepository implements IMovieRepository{
         return movies;
     }
 
+    @Override
+    public Iterable<Movie> findMoviesByYear(int year)
+    {
+        //TODO:
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public Iterable<Movie> findMoviesByMonthYear(int month, int year)
+    {
+        //TODO:
+        throw new UnsupportedOperationException();
+    }
 
     @Override
     public <S extends Movie> S save(S movie) {
@@ -116,16 +129,6 @@ public class MovieRepository implements IMovieRepository{
     public Iterable<Movie> findAllById(Iterable<Long> longs) {
         throw new UnsupportedOperationException();
 
-    }
-
-    @Override
-    public Iterable<Movie> findMoviesByYear(int year) {
-        return null;
-    }
-
-    @Override
-    public Iterable<Movie> findMoviesByMonthYear(int month, int year) {
-        return null;
     }
 
     @Override
