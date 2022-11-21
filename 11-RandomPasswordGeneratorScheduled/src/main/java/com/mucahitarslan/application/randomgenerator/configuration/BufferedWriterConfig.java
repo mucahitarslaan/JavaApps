@@ -12,8 +12,8 @@ import java.nio.charset.StandardCharsets;
 
 @Configuration
 public class BufferedWriterConfig {
-    private FileOutputStream fileOutputStream1;
-    private FileOutputStream fileOutputStream2;
+    private final FileOutputStream fileOutputStream1;
+    private final FileOutputStream fileOutputStream2;
 
     public BufferedWriterConfig(@Qualifier("fileOutputStream.first") FileOutputStream fileOutputStream1,
                                 @Qualifier("fileOutputStream.second") FileOutputStream fileOutputStream2) {
