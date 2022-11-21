@@ -2,8 +2,10 @@ package com.mucahitarslan.application.randomgenerator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-// Application Runner kullanımında sıra kullanım yapılmamalıdır. Initialize sırasında sorun yaşatabilir.
+import org.springframework.scheduling.annotation.EnableScheduling;
+
 @SpringBootApplication
+@EnableScheduling
 public class App {
 
 	public static void main(String[] args)
