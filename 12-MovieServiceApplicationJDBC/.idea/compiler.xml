@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="011-MovieServiceApplicationJDBC" />
+        <module name="12-MovieServiceApplicationJDBC" />
         <module name="MovieRestServiceApplication" />
         <module name="GenericAppIntelliJ" />
       </profile>
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="011-MovieServiceApplicationJDBC" options="-parameters" />
       <module name="11-MovieServiceApplicationJDBC" options="-parameters" />
+      <module name="12-MovieServiceApplicationJDBC" options="-parameters" />
       <module name="GenericAppIntelliJ" options="-parameters" />
       <module name="MovieRestServiceApplication" options="-parameters" />
     </option>
