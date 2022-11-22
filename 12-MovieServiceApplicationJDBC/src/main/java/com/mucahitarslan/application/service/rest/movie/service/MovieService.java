@@ -27,8 +27,9 @@ public class MovieService {
 
     private List<MovieDTO> findAllMoviesCallback()
     {
-        return StreamSupport.stream(movieServiceApplicationDAL.findAllDirectors().spliterator(),false)
+        return StreamSupport.stream(movieServiceApplicationDAL.findAllMovies().spliterator(),false)
                 .map(movieConverter::toMovieDto)
                 .collect(Collectors.toList());
     }
+    
 }
