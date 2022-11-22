@@ -8,7 +8,15 @@ public class Director {
     private LocalDate birthdate;
 
     public Director()
-    {
+    {}
+
+    public Director(String name) {
+        this.name = name;
+    }
+
+    public Director(long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     public Director(long id, String name, LocalDate birthdate) {

@@ -8,6 +8,7 @@ import com.mucahitarslan.application.service.rest.movie.data.repository.IMovieRe
 import com.mucahitarslan.application.service.rest.movie.dto.MovieDetailDTO;
 import org.springframework.stereotype.Component;
 
+import static org.csystem.util.data.DatabaseUtil.doWorkForRepository;
 @Component
 public class MovieServiceApplicationDAL {
     private final IMovieRepository movieRepository;
@@ -19,41 +20,45 @@ public class MovieServiceApplicationDAL {
     }
 
     public long countMovies() {   //...
-        return movieRepository.count();
+        return doWorkForRepository(movieRepository::count,"MovieServiceApplicationDAL.countMovies");
     }
 
     public Iterable<Movie> findAllMovies() {
-        return movieRepository.findAll();
+        return doWorkForRepository(movieRepository::findAll,"MovieServiceApplicationDAL.findAllMovies");
     }
 
-    public Iterable<Movie> findMoviesByMonthYearCallback(int month, int year)
+    public Iterable<Movie> findMoviesByMonthYear(int month, int year)
     {
-        return movieRepository.findMoviesByMonthYear(month,year);
+        return doWorkForRepository(() -> findMoviesByMonthYear(month,year), "MovieServiceApplicationDAL.findMoviesByMonthYear");
     }
 
-    public Iterable<Movie> findMoviesByYearCallback(int year)
+    public Iterable<Movie> findMoviesByYear(int year)
     {
         return movieRepository.findMoviesByYear(year);
     }
 
-    public Iterable<MovieDirectorDetail> findMoviesDetailByYearCallback(int year)
+    public Iterable<MovieDirectorDetail> findMoviesDetailByYear(int year)
     {
         return movieRepository.findMoviesDetailsByYear(year);
     }
 
-    public Movie saveMovie(Movie movie) {
-        return movieRepository.save(movie);
+    public Movie saveMovie(Movie movie)
+    {
+        return doWorkForRepository(() -> movieRepository.save(movie), "MovieServiceApplicationDAL.saveMovie");
     }
 
-    public long countDirectors() {
-        return directorRepository.count();
+    public long countDirectors()
+    {
+        return doWorkForRepository(directorRepository::count, "MovieServiceApplicationDAL.countDirectors");
     }
 
-    public Director saveDirector(Director director) {
-        return directorRepository.save(director);
+    public Director saveDirector(Director director)
+    {
+        return doWorkForRepository(() -> directorRepository.save(director), "MovieServiceApplicationDAL.saveDirector");
     }
 
-    public Iterable<Director> findAllDirectors() {
-        return directorRepository.findAll();
+    public Iterable<Director> findAllDirectors()
+    {
+        return doWorkForRepository(directorRepository::findAll, "MovieServiceApplicationDAL.findAllDirectors");
     }
 }

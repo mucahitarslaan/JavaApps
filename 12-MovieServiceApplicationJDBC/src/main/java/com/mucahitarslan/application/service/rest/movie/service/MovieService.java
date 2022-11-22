@@ -35,14 +35,14 @@ public class MovieService {
 
     private List<MovieDTO> findMoviesByMonthYearCallback(int month, int year)
     {
-        return StreamSupport.stream(movieServiceApplicationDAL.findMoviesByMonthYearCallback(month,year).spliterator(),false)
+        return StreamSupport.stream(movieServiceApplicationDAL.findMoviesByMonthYear(month,year).spliterator(),false)
                 .map(movieConverter::toMovieDto)
                 .collect(Collectors.toList());
     }
 
     private List<MovieDTO> findMoviesByYearCallback(int year)
     {
-        return StreamSupport.stream(movieServiceApplicationDAL.findMoviesByYearCallback(year).spliterator(),false)
+        return StreamSupport.stream(movieServiceApplicationDAL.findMoviesByYear(year).spliterator(),false)
                 .map(movieConverter::toMovieDto)
                 .collect(Collectors.toList());
     }
@@ -55,19 +55,19 @@ public class MovieService {
 
     private List<MovieDetailDTO> findMoviesDetailByYearCallback(int year)
     {
-        return StreamSupport.stream(movieServiceApplicationDAL.findMoviesDetailByYearCallback(year).spliterator(),false)
+        return StreamSupport.stream(movieServiceApplicationDAL.findMoviesDetailByYear(year).spliterator(),false)
                 .map(movieDirectorConverter::toMovieDetailDTO)
                 .collect(Collectors.toList());
     }
 
     public long countMovies()
     {
-        return doWorkForService(() -> countMovies(), "MoviesApplicationService.countMovies");
+        return doWorkForService(this::countMovies, "MoviesApplicationService.countMovies");
     }
 
     public List<MovieDTO> findAllMovies()
     {
-        return doWorkForService(() -> findAllMoviesCallback(),"MoviesApplicationService.findAllMovies");
+        return doWorkForService(this::findAllMoviesCallback,"MoviesApplicationService.findAllMovies");
     }
 
     public List<MovieDTO> findMoviesByMonthYear(int month, int year)

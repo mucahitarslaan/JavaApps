@@ -4,6 +4,7 @@ import com.mucahitarslan.application.service.rest.movie.data.entity.Movie;
 import com.mucahitarslan.application.service.rest.movie.dto.MovieDTO;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 @Component
@@ -28,8 +29,14 @@ public class MovieConverter {
 
     public Movie toMovie(MovieDTO movieDTO)
     {
-        // TODO:
-        throw new UnsupportedOperationException();
+        var movie = new Movie();
+
+        movie.setName(movieDTO.getName());
+        movie.setSceneTime(LocalDate.parse(movieDTO.getSceneTime(), dateTimeFormatter));
+        movie.setRating(movieDTO.getRating());
+        movie.setCost(movieDTO.getCost());
+
+        return movie;
     }
 
 }
