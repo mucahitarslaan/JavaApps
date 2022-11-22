@@ -4,6 +4,7 @@ import com.mucahitarslan.application.service.rest.movie.data.entity.Director;
 import com.mucahitarslan.application.service.rest.movie.data.entity.Movie;
 import com.mucahitarslan.application.service.rest.movie.data.repository.IDirectorRepository;
 import com.mucahitarslan.application.service.rest.movie.data.repository.IMovieRepository;
+import com.mucahitarslan.application.service.rest.movie.dto.MovieDetailDTO;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -22,6 +23,21 @@ public class MovieServiceApplicationDAL {
 
     public Iterable<Movie> findAllMovies() {
         return movieRepository.findAll();
+    }
+
+    public Iterable<Movie> findMoviesByMonthYearCallback(int month, int year)
+    {
+        return movieRepository.findMoviesByMonthYear(month,year);
+    }
+
+    public Iterable<Movie> findMoviesByYearCallback(int year)
+    {
+        return movieRepository.findMoviesByYear(year);
+    }
+
+    public Iterable<MovieDetailDTO> findMoviesDetailByYearCallback(int year)
+    {
+        return movieRepository.
     }
 
     public Movie saveMovie(Movie movie) {

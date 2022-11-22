@@ -1,5 +1,6 @@
 package com.mucahitarslan.application.service.rest.movie.data.repository;
 import com.mucahitarslan.application.service.rest.movie.data.entity.Movie;
+import com.mucahitarslan.application.service.rest.movie.data.entity.MovieDirectorDetail;
 import org.springframework.jdbc.core.RowCallbackHandler;
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
@@ -141,5 +142,10 @@ public class MovieRepository implements IMovieRepository{
     public <S extends Movie> Iterable<S> save(Iterable<S> entities) {
         throw new UnsupportedOperationException();
 
+    }
+
+    @Override
+    public Iterable<MovieDirectorDetail> findMoviesDetailsByYear(int year) {
+        throw new UnsupportedOperationException();
     }
 }
