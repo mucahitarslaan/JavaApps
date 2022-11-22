@@ -52,5 +52,41 @@ public class MovieService {
         movieServiceApplicationDAL.saveMovie(movieConverter.toMovie(movieDTO));
         return movieDTO;
     }
-    
+
+    private List<MovieDetailDTO> findMoviesDetailByYearCallback(int year)
+    {
+        return StreamSupport.stream(movieServiceApplicationDAL.findMoviesDetailByYearCallback(year).spliterator(),false)
+                .map(movieDirectorConverter::toMovieDetailDTO)
+                .collect(Collectors.toList());
+    }
+
+    public long countMovies()
+    {
+        return doWorkForService(() -> countMovies(), "MoviesApplicationService.countMovies");
+    }
+
+    public List<MovieDTO> findAllMovies()
+    {
+        return doWorkForService(() -> findAllMoviesCallback(),"MoviesApplicationService.findAllMovies");
+    }
+
+    public List<MovieDTO> findMoviesByMonthYear(int month, int year)
+    {
+        return doWorkForService(() -> findMoviesByMonthYearCallback(month,year),"MoviesApplicationService.findMoviesByMonthYear");
+    }
+
+    public List<MovieDTO> findMoviesByYear(int year)
+    {
+        return doWorkForService(() -> findMoviesByYearCallback(year),"MoviesApplicationService.findMoviesByYear");
+    }
+
+    public MovieDTO saveMovie(MovieDTO movieDTO)
+    {
+        return doWorkForService(() -> saveMovieCallback(movieDTO),"MoviesApplicationService.saveMovie");
+    }
+
+    public List<MovieDetailDTO> findMoviesDetailsByYear(int year)
+    {
+        return doWorkForService(() -> findMoviesDetailByYearCallback(year), "MoviesApplicationService.findMoviesDetailsByYear");
+    }
 }

@@ -2,6 +2,7 @@ package com.mucahitarslan.application.service.rest.movie.data.dal;
 
 import com.mucahitarslan.application.service.rest.movie.data.entity.Director;
 import com.mucahitarslan.application.service.rest.movie.data.entity.Movie;
+import com.mucahitarslan.application.service.rest.movie.data.entity.MovieDirectorDetail;
 import com.mucahitarslan.application.service.rest.movie.data.repository.IDirectorRepository;
 import com.mucahitarslan.application.service.rest.movie.data.repository.IMovieRepository;
 import com.mucahitarslan.application.service.rest.movie.dto.MovieDetailDTO;
@@ -35,9 +36,9 @@ public class MovieServiceApplicationDAL {
         return movieRepository.findMoviesByYear(year);
     }
 
-    public Iterable<MovieDetailDTO> findMoviesDetailByYearCallback(int year)
+    public Iterable<MovieDirectorDetail> findMoviesDetailByYearCallback(int year)
     {
-        return movieRepository.
+        return movieRepository.findMoviesDetailsByYear(year);
     }
 
     public Movie saveMovie(Movie movie) {
