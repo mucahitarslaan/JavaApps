@@ -3,7 +3,6 @@ package com.mucahitarslan.application.rest.todo.controller;
 import com.mucahitarslan.application.rest.todo.dto.TodoInfoDTO;
 import com.mucahitarslan.application.rest.todo.dto.TodoSaveDTO;
 import com.mucahitarslan.application.rest.todo.service.TodoService;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
