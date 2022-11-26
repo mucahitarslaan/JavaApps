@@ -1,0 +1,11 @@
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/App.java
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/rest/todo/controller/TodoController.java
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/rest/todo/dto/TodoInfoDTO.java
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/rest/todo/dto/TodoSaveDTO.java
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/rest/todo/mapper/ITodoSaveMapper.java
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/rest/todo/configuration/MapperConfig.java
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/rest/todo/data/dal/TodoAppDAL.java
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/rest/todo/mapper/ITodoInfoMapper.java
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/rest/todo/service/TodoService.java
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/rest/todo/data/entity/Todo.java
+/Users/admin/Documents/JavaApps/13-TodoAppMapStructJPA/src/main/java/com/mucahitarslan/application/rest/todo/data/repository/ITodoRepository.java
