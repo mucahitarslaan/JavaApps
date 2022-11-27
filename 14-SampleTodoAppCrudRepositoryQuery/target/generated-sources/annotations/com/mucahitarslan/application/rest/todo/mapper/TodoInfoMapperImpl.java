@@ -6,7 +6,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-11-27T04:12:43+0300",
+    date = "2022-11-27T04:20:39+0300",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 15.0.2 (Amazon.com Inc.)"
 )
 public class TodoInfoMapperImpl implements ITodoInfoMapper {
@@ -20,13 +20,13 @@ public class TodoInfoMapperImpl implements ITodoInfoMapper {
         Todo todo = new Todo();
 
         if ( todoInfoDTO.getId() != null ) {
-            todo.id = todoInfoDTO.getId();
+            todo.setId( todoInfoDTO.getId() );
         }
-        todo.title = todoInfoDTO.getTitle();
-        todo.text = todoInfoDTO.getText();
-        todo.insertDateTime = todoInfoDTO.getInsertDateTime();
-        todo.lastUpdate = todoInfoDTO.getLastUpdate();
-        todo.completed = todoInfoDTO.isCompleted();
+        todo.setTitle( todoInfoDTO.getTitle() );
+        todo.setText( todoInfoDTO.getText() );
+        todo.setInsertDateTime( todoInfoDTO.getInsertDateTime() );
+        todo.setLastUpdate( todoInfoDTO.getLastUpdate() );
+        todo.setCompleted( todoInfoDTO.isCompleted() );
 
         return todo;
     }
@@ -39,12 +39,12 @@ public class TodoInfoMapperImpl implements ITodoInfoMapper {
 
         TodoInfoDTO todoInfoDTO = new TodoInfoDTO();
 
-        todoInfoDTO.setId( todo.id );
-        todoInfoDTO.setTitle( todo.title );
-        todoInfoDTO.setText( todo.text );
-        todoInfoDTO.setInsertDateTime( todo.insertDateTime );
-        todoInfoDTO.setLastUpdate( todo.lastUpdate );
-        todoInfoDTO.setCompleted( todo.completed );
+        todoInfoDTO.setId( todo.getId() );
+        todoInfoDTO.setTitle( todo.getTitle() );
+        todoInfoDTO.setText( todo.getText() );
+        todoInfoDTO.setInsertDateTime( todo.getInsertDateTime() );
+        todoInfoDTO.setLastUpdate( todo.getLastUpdate() );
+        todoInfoDTO.setCompleted( todo.isCompleted() );
 
         return todoInfoDTO;
     }

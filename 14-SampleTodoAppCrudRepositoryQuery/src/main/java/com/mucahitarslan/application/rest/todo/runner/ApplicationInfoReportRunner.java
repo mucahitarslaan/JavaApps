@@ -25,7 +25,7 @@ public class ApplicationInfoReportRunner implements ApplicationRunner {
         Console.writeLine("-----Todos-----");
         ITodoRepository todoResository = applicationContext.getBean(ITodoRepository.class);
 
-        todoResository.findAll().forEach(t -> Console.writeLine(t.title));
+        todoResository.findAll().forEach(t -> Console.writeLine(t.getTitle()));
 
         Console.writeLine("-----Application Info-----");
         Console.writeLine("Application Name :%s", applicationContext.getApplicationName());

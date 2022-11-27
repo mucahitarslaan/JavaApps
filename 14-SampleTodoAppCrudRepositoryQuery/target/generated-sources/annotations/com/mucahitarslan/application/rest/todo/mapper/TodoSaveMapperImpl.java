@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-11-27T04:12:42+0300",
+    date = "2022-11-27T04:20:39+0300",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 15.0.2 (Amazon.com Inc.)"
 )
 @Component
@@ -21,8 +21,8 @@ public class TodoSaveMapperImpl implements ITodoSaveMapper {
 
         Todo todo = new Todo();
 
-        todo.title = todoSaveDTO.getTitle();
-        todo.text = todoSaveDTO.getText();
+        todo.setTitle( todoSaveDTO.getTitle() );
+        todo.setText( todoSaveDTO.getText() );
 
         return todo;
     }
@@ -35,8 +35,8 @@ public class TodoSaveMapperImpl implements ITodoSaveMapper {
 
         TodoSaveDTO todoSaveDTO = new TodoSaveDTO();
 
-        todoSaveDTO.setTitle( todo.title );
-        todoSaveDTO.setText( todo.text );
+        todoSaveDTO.setTitle( todo.getTitle() );
+        todoSaveDTO.setText( todo.getText() );
 
         return todoSaveDTO;
     }
