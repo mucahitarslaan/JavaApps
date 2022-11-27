@@ -19,14 +19,14 @@ public class TodoAppDAL {
         return doWorkForRepository(todoRepository::findAll,"TodoAppDAL.findAll()");
     }
 
-    public Iterable<Todo> findByCompletedAndTitle(boolean completed, String title)
+    public Iterable<Todo> findTodosByCompletedAndTitle(boolean completed, String title)
     {
-        return doWorkForRepository(() -> todoRepository.findByCompletedAndTitle(completed, title),"TodoAppDAL.findByCompletedAndTitle()");
+        return doWorkForRepository(() -> todoRepository.findTodosByCompletedAndTitle(completed, title),"TodoAppDAL.findByCompletedAndTitle()");
     }
 
     public Iterable<Todo> findTodosByCompleted(boolean completed)
     {
-        return doWorkForRepository(() -> todoRepository.findByCompleted(completed),"TodoAppDAL.findTodosByCompleted()");
+        return doWorkForRepository(() -> todoRepository.findTodosByCompleted(completed),"TodoAppDAL.findTodosByCompleted()");
     }
 
     public Iterable<Todo> findTodosByTitle(String title)
@@ -41,6 +41,11 @@ public class TodoAppDAL {
     public Todo saveTodo(Todo todo)
     {
         return doWorkForRepository(() -> todoRepository.save(todo),"TodoAppDAL.saveTodo()");
+    }
+
+    public Iterable<Todo> findTodosByMonth(int month)
+    {
+        return doWorkForRepository(() -> todoRepository.findTodosByMonth(month),"TodoAppDAL.findTodosByMonth");
     }
 
 }

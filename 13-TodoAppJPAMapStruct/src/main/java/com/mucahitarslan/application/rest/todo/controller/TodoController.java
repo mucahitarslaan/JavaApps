@@ -30,9 +30,9 @@ public class TodoController
     }
 
     @GetMapping("/completed/title")
-    public Iterable<TodoInfoDTO> findByCompletedAndTitle(@RequestParam(defaultValue = "true") boolean completed, String title)
+    public Iterable<TodoInfoDTO> findTodosByCompletedAndTitle(@RequestParam(defaultValue = "true") boolean completed, String title)
     {
-        return todoService.findByCompletedAndTitle(completed,title);
+        return todoService.findTodosByCompletedAndTitle(completed,title);
     }
 
     @GetMapping("/title")
@@ -51,5 +51,11 @@ public class TodoController
     public TodoInfoDTO saveTodo(@RequestBody TodoSaveDTO todoSaveDTO)
     {
         return todoService.saveTodo(todoSaveDTO);
+    }
+
+    @GetMapping("/month")
+    public List<TodoInfoDTO> findTodosByMonth(int month)
+    {
+        return todoService.findTodosByMonth(month);
     }
 }

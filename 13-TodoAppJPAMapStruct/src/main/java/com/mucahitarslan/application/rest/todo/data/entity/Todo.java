@@ -20,7 +20,7 @@ public class Todo{//POJO (Plain Old Java Object)
     @Column(name = "text", length = 512)
     public String text;
 
-    @Column(name = "instert_date_time", nullable = false)
+    @Column(name = "insert_date_time", nullable = false)
     public LocalDateTime insertDateTime = LocalDateTime.now();
 
     @Column(name = "last_update", nullable = false)

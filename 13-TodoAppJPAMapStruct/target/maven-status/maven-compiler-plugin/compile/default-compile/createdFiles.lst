@@ -4,6 +4,7 @@ com/mucahitarslan/application/rest/todo/mapper/ITodoInfoMapper.class
 com/mucahitarslan/application/rest/todo/data/repository/ITodoRepository.class
 com/mucahitarslan/application/rest/todo/data/dal/TodoAppDAL.class
 META-INF/services/com.mucahitarslan.application.rest.todo.mapper.ITodoInfoMapper
+com/mucahitarslan/application/rest/todo/runner/ApplicationInfoReportRunner.class
 com/mucahitarslan/application/rest/todo/configuration/MapperConfig.class
 com/mucahitarslan/application/rest/todo/mapper/TodoSaveMapperImpl.class
 com/mucahitarslan/application/rest/todo/dto/TodoInfoDTO.class
