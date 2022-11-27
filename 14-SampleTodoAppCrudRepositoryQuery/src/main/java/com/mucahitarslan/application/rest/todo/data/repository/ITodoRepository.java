@@ -13,13 +13,14 @@ public interface ITodoRepository extends CrudRepository<Todo,Long>
     //@Query("select td from Todo td where td.title=:title")
     Iterable<Todo> findByTitle(String title);
 
+    //@Query("select td from Todo td where td.title like %:text%")
     Iterable<Todo> findTodosByTitleContains(String text);
-
-    //Iterable<Todo> findByTitleOrderBy(String title);
 
     //@Query("select td from Todo td where td.completed=:completed and td.title=:title")
     Iterable<Todo> findTodosByCompletedAndTitle(boolean completed, String title);
-    Iterable<Todo> findByCompletedAndTitleContains(boolean completed, String title);
+
+    //@Query("select td from Todo td where td.completed=:completed and td.title= like %:text%")
+    Iterable<Todo> findByCompletedAndTitleContains(boolean completed, String text);
 
     @Query(value = "select  * from todoappdb where date_part('month',insert_date_time)=?",nativeQuery = true) // PostreSQL'e özgü
     //@Query(value = "select  * from todoappdb where date_part('month',insert_date_time)=:month",nativeQuery = true)     (:month -> ?)
