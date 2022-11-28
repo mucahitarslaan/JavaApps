@@ -18,6 +18,15 @@ public class TodoAppDAL {
         this.itemRepository = itemRepository;
     }
 
+    private Item saveItemCallback(Item item) {
+        var todoOpt = todoRepository.findById(item.todoId);
+
+        if (todoOpt.isEmpty())
+            throw new IllegalArgumentException("Invalid todo id");
+        item.todo = todoOpt.get();
+
+        return itemRepository.save(item);
+    }
     public Iterable<Todo> findAllTodos()
     {
         return doWorkForRepository(todoRepository::findAll,"TodoAppDAL.findAll()");
@@ -54,7 +63,6 @@ public class TodoAppDAL {
 
     public Item saveItem(Item item)
     {
-        return doWorkForRepository(() -> itemRepository.save(item),"TodoAppDAL.saveItem()");
+        return doWorkForRepository(() -> saveItemCallback(item),"TodoAppDAL.saveItem()");
     }
-
 }

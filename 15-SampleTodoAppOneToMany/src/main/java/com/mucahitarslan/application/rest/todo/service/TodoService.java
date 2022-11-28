@@ -1,9 +1,13 @@
 package com.mucahitarslan.application.rest.todo.service;
 
 import com.mucahitarslan.application.rest.todo.data.dal.TodoAppDAL;
-import com.mucahitarslan.application.rest.todo.data.entity.Todo;
+import com.mucahitarslan.application.rest.todo.data.entity.Item;
+import com.mucahitarslan.application.rest.todo.dto.ItemInfoDTO;
+import com.mucahitarslan.application.rest.todo.dto.ItemSaveDTO;
 import com.mucahitarslan.application.rest.todo.dto.TodoInfoDTO;
 import com.mucahitarslan.application.rest.todo.dto.TodoSaveDTO;
+import com.mucahitarslan.application.rest.todo.mapper.IItemInfoMapper;
+import com.mucahitarslan.application.rest.todo.mapper.IItemSaveMapper;
 import com.mucahitarslan.application.rest.todo.mapper.ITodoInfoMapper;
 import com.mucahitarslan.application.rest.todo.mapper.ITodoSaveMapper;
 import org.springframework.stereotype.Service;
@@ -21,11 +25,15 @@ public class TodoService
     private final TodoAppDAL todoAppDAL;
     private final ITodoInfoMapper todoInfoMapper;
     private final ITodoSaveMapper todoSaveMapper;
+    private final IItemInfoMapper itemInfoMapper;
+    private final IItemSaveMapper itemSaveMapper;
 
-    public TodoService(TodoAppDAL todoAppDAL, ITodoInfoMapper todoInfoMapper, ITodoSaveMapper todoSaveMapper) {
+    public TodoService(TodoAppDAL todoAppDAL, ITodoInfoMapper todoInfoMapper, ITodoSaveMapper todoSaveMapper, IItemInfoMapper itemInfoMapper, IItemSaveMapper itemSaveMapper) {
         this.todoAppDAL = todoAppDAL;
         this.todoInfoMapper = todoInfoMapper;
         this.todoSaveMapper = todoSaveMapper;
+        this.itemInfoMapper = itemInfoMapper;
+        this.itemSaveMapper = itemSaveMapper;
     }
 
     //Kod tekrarını azaltmak için böyle bir metot yazılabilir.
@@ -34,10 +42,6 @@ public class TodoService
         return StreamSupport.stream(iterable.spliterator(),parallel)
                 .map(function)
                 .collect(Collectors.toList());
-    }
-    private TodoInfoDTO saveCallback(TodoSaveDTO todoSaveDTO)
-    {
-        return todoInfoMapper.toTodoInfoDTO(todoAppDAL.saveTodo(todoSaveMapper.toTodo(todoSaveDTO)));
     }
 
     private List<TodoInfoDTO> findAllTodosCallback()
@@ -57,7 +61,6 @@ public class TodoService
 
     private List<TodoInfoDTO> findTodosByCompletedAndTitleCallback(boolean completed, String title)
     {
-
         return convertToList(todoAppDAL.findTodosByCompletedAndTitle(completed,title),false, todoInfoMapper::toTodoInfoDTO);
 //        return StreamSupport.stream(todoAppDAL.findByCompletedAndTitle(completed,title).spliterator(),false)
 //                .map(todoInfoConverter::toTodoInfoDTO)
@@ -80,6 +83,17 @@ public class TodoService
     public List<TodoInfoDTO> findAllTodos()
     {
         return doWorkForService(this::findAllTodosCallback, "TodoService.findAll()");
+    }
+
+
+    private TodoInfoDTO saveCallback(TodoSaveDTO todoSaveDTO)
+    {
+        return todoInfoMapper.toTodoInfoDTO(todoAppDAL.saveTodo(todoSaveMapper.toTodo(todoSaveDTO)));
+    }
+
+    private ItemSaveDTO saveItemCallback(ItemSaveDTO itemSaveDTO)
+    {
+        return itemSaveMapper.toItemSaveDTO(todoAppDAL.saveItem(itemSaveMapper.toItem(itemSaveDTO)));
     }
 
     public List<TodoInfoDTO> findTodosByCompleted(boolean completed)
@@ -112,4 +126,8 @@ public class TodoService
         return doWorkForService(() -> findTodosByMonthCallback(month),"TodoService.findTodosByMonth()");
     }
 
+    public ItemSaveDTO saveItem(ItemSaveDTO itemSaveDTO)
+    {
+        return doWorkForService(() -> saveItemCallback(itemSaveDTO), "TodoService.saveItem");
+    }
 }

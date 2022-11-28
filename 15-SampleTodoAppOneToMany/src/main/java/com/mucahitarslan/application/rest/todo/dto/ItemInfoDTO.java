@@ -2,37 +2,21 @@ package com.mucahitarslan.application.rest.todo.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import javax.persistence.Column;
 import java.time.LocalDateTime;
 
-public class TodoInfoDTO {
-    private Long id;
-    private String title;
-    private String description;
-    private LocalDateTime insertDateTime;
-    private boolean completed;
+public class ItemInfoDTO {
+    public String text;
+    public LocalDateTime insertDateTime = LocalDateTime.now();
+    public LocalDateTime lastUpdate;
+    public boolean completed;
 
-    public Long getId() {
-        return id;
+    public String getText() {
+        return text;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+    public void setText(String text) {
+        this.text = text;
     }
 
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy hh:mm:ss")
@@ -44,7 +28,14 @@ public class TodoInfoDTO {
         this.insertDateTime = insertDateTime;
     }
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy hh:mm:ss")
+    public LocalDateTime getLastUpdate() {
+        return lastUpdate;
+    }
 
+    public void setLastUpdate(LocalDateTime lastUpdate) {
+        this.lastUpdate = lastUpdate;
+    }
 
     public boolean isCompleted() {
         return completed;
