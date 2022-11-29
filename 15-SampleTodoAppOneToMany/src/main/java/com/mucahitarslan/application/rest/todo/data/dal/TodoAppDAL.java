@@ -65,4 +65,9 @@ public class TodoAppDAL {
     {
         return doWorkForRepository(() -> saveItemCallback(item),"TodoAppDAL.saveItem()");
     }
+
+    public Iterable<Item> findAllItems()
+    {
+        return doWorkForRepository(itemRepository::findAll,"TodoAppDAL.saveItem()");
+    }
 }

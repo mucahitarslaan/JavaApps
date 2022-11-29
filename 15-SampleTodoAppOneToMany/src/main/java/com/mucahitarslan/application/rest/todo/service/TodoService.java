@@ -128,6 +128,16 @@ public class TodoService
 
     public ItemSaveDTO saveItem(ItemSaveDTO itemSaveDTO)
     {
-        return doWorkForService(() -> saveItemCallback(itemSaveDTO), "TodoService.saveItem");
+        return doWorkForService(() -> saveItemCallback(itemSaveDTO), "TodoService.saveItem()");
+    }
+
+    public List<ItemInfoDTO> findAllItemsCallback()
+    {
+        return convertToList(todoAppDAL.findAllItems(),true,itemInfoMapper::toItemInfoDTO);
+    }
+
+    public List<ItemInfoDTO> findAllItems()
+    {
+        return doWorkForService(this::findAllItemsCallback, "TodoService.findAll()");
     }
 }
