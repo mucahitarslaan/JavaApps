@@ -22,7 +22,7 @@ public interface ITodoRepository extends CrudRepository<Todo,Long>
     //@Query("select td from Todo td where td.completed=:completed and td.title= like %:text%")
     Iterable<Todo> findByCompletedAndTitleContains(boolean completed, String text);
 
-    @Query(value = "select  * from todoappdb where date_part('month',insert_date_time)=?",nativeQuery = true) // PostreSQL'e özgü
+    @Query(value = "select  * from todos where date_part('month',insert_date_time)=?",nativeQuery = true) // PostreSQL'e özgü
     //@Query(value = "select  * from todoappdb where date_part('month',insert_date_time)=:month",nativeQuery = true)     (:month -> ?)
     Iterable<Todo> findTodosByMonth(int month);
 }

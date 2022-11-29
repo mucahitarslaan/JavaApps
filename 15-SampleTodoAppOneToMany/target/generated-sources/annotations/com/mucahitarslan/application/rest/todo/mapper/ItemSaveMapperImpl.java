@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-11-29T02:08:07+0300",
+    date = "2022-11-29T04:17:12+0300",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 15.0.2 (Amazon.com Inc.)"
 )
 @Component
@@ -21,7 +21,6 @@ public class ItemSaveMapperImpl implements IItemSaveMapper {
 
         Item item = new Item();
 
-        item.todoId = itemSaveDTO.getTodoId();
         item.text = itemSaveDTO.getText();
 
         return item;
@@ -35,7 +34,6 @@ public class ItemSaveMapperImpl implements IItemSaveMapper {
 
         ItemSaveDTO itemSaveDTO = new ItemSaveDTO();
 
-        itemSaveDTO.setTodoId( item.todoId );
         itemSaveDTO.setText( item.text );
 
         return itemSaveDTO;

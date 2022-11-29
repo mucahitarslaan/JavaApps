@@ -93,7 +93,7 @@ public class TodoService
 
     private ItemSaveDTO saveItemCallback(ItemSaveDTO itemSaveDTO)
     {
-        return itemSaveMapper.toItemSaveDTO(todoAppDAL.saveItem(itemSaveMapper.toItem(itemSaveDTO)));
+        return itemSaveMapper.toItemSaveDTO(todoAppDAL.saveItem(itemSaveDTO));
     }
 
     public List<TodoInfoDTO> findTodosByCompleted(boolean completed)
@@ -141,3 +141,21 @@ public class TodoService
         return doWorkForService(this::findAllItemsCallback, "TodoService.findAll()");
     }
 }
+//
+//class App{
+//    //numberdan türeyenleri T extends Number ->>>>> T yerine gelebilir.
+//
+//    public static void main(String[] args)
+//    {
+//        RamazanAbi<Integer> integerRamazanAbi = new RamazanAbi<>();
+//
+//
+//    }
+//}
+//class RamazanAbi<T extends Number>{
+//
+//
+//}
+//class Xss{
+//    List<T super Number>
+//}

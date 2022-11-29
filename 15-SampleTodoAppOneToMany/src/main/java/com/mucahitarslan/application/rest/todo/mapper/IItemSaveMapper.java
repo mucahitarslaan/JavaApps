@@ -8,9 +8,9 @@ import org.mapstruct.Mappings;
 
 @Mapper(implementationName = "ItemSaveMapperImpl", componentModel = "spring")
 public interface IItemSaveMapper {
-    @Mappings(@Mapping(source = "todoId",target = "todoId"))
+    //@Mappings(@Mapping(source = "todoId",target = "item_id"))
     Item toItem(ItemSaveDTO itemSaveDTO);
-    @Mappings(@Mapping(source = "todoId",target = "todoId"))
+    //@Mappings(@Mapping(source = "item_id",target = "todoId"))
     ItemSaveDTO toItemSaveDTO(Item item);
 
 }

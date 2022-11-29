@@ -1,4 +1,5 @@
-/*package com.mucahitarslan.application.rest.todo.runner;
+/*
+package com.mucahitarslan.application.rest.todo.runner;
 
 import com.mucahitarslan.application.rest.todo.data.repository.ITodoRepository;
 import org.csystem.util.Console;
@@ -39,5 +40,4 @@ public class ApplicationInfoReportRunner implements ApplicationRunner {
         Console.writeLine("----------------");
 
     }
-}
- */
+}*/

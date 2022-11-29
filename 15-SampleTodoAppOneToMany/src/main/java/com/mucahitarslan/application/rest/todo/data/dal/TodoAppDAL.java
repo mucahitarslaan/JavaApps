@@ -4,6 +4,7 @@ import com.mucahitarslan.application.rest.todo.data.entity.Item;
 import com.mucahitarslan.application.rest.todo.data.entity.Todo;
 import com.mucahitarslan.application.rest.todo.data.repository.IItemRepository;
 import com.mucahitarslan.application.rest.todo.data.repository.ITodoRepository;
+import com.mucahitarslan.application.rest.todo.dto.ItemSaveDTO;
 import org.springframework.stereotype.Component;
 
 import static org.csystem.util.data.DatabaseUtil.*;
@@ -18,13 +19,13 @@ public class TodoAppDAL {
         this.itemRepository = itemRepository;
     }
 
-    private Item saveItemCallback(Item item) {
-        var todoOpt = todoRepository.findById(item.todoId);
-
+    private Item saveItemCallback(ItemSaveDTO itemSaveDTO) {
+        var todoOpt = todoRepository.findById(itemSaveDTO.getTodoId());
+        Item item = new Item();
         if (todoOpt.isEmpty())
             throw new IllegalArgumentException("Invalid todo id");
         item.todo = todoOpt.get();
-
+        item.text = itemSaveDTO.getText();
         return itemRepository.save(item);
     }
     public Iterable<Todo> findAllTodos()
@@ -61,9 +62,9 @@ public class TodoAppDAL {
         return doWorkForRepository(() -> todoRepository.findTodosByMonth(month),"TodoAppDAL.findTodosByMonth");
     }
 
-    public Item saveItem(Item item)
+    public Item saveItem(ItemSaveDTO itemSaveDTO)
     {
-        return doWorkForRepository(() -> saveItemCallback(item),"TodoAppDAL.saveItem()");
+        return doWorkForRepository(() -> saveItemCallback(itemSaveDTO),"TodoAppDAL.saveItem()");
     }
 
     public Iterable<Item> findAllItems()
