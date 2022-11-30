@@ -20,6 +20,7 @@
         <module name="13-TodoAppJPAMapStruct" />
         <module name="14-SampleTodoAppCrudRepositoryQuery" />
         <module name="15-SampleTodoAppOneToMany" />
+        <module name="TodoRestServiceApp" />
       </profile>
     </annotationProcessing>
   </component>
@@ -30,6 +31,7 @@
       <module name="15-SampleTodoAppOneToMany" options="-parameters" />
       <module name="GenericAppIntelliJ" options="-parameters" />
       <module name="GenericWebAppIntellij" options="-parameters" />
+      <module name="TodoRestServiceApp" options="-parameters" />
     </option>
   </component>
 </project>
