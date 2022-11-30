@@ -1,12 +1,13 @@
 package com.mucahitarslan.application.rest.postalcodes.geonames.dto;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class PostalCodeInfo {
-    private List<PostalCode> postalCodes;
+    private final List<PostalCode> postalcodes = new ArrayList<>();
 
-    public List<PostalCode> getPostalCodes()
+    public List<PostalCode> getPostalcodes()
     {
-        return postalCodes;
+        return postalcodes;
     }
 }
