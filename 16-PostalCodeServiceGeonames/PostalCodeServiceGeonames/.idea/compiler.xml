@@ -8,6 +8,16 @@
         <outputRelativeToContentRoot value="true" />
         <module name="GenericAppIntelliJ" />
         <module name="GenericAppIntellij" />
+      </profile>
+      <profile name="Annotation profile for PostalCodeServiceGeonames" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.3.Final/mapstruct-processor-1.5.3.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.3.Final/mapstruct-1.5.3.Final.jar" />
+        </processorPath>
         <module name="PostalCodeServiceGeonames" />
       </profile>
     </annotationProcessing>
@@ -16,7 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="GenericAppIntelliJ" options="-parameters" />
       <module name="GenericAppIntellij" options="-parameters" />
-      <module name="PostalCodeServiceGeonames" options="-parameters" />
+      <module name="PostalCodeServiceGeonames" options="-parameters -Amapstruct.defaultComponentModel=spring" />
     </option>
   </component>
 </project>
