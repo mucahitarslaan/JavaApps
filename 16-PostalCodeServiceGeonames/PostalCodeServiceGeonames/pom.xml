@@ -10,9 +10,9 @@
 	</parent>
 
 	<groupId>com.mucahitarslan</groupId>
-	<artifactId>GenericAppIntellij</artifactId>
+	<artifactId>PostalCodeServiceGeonames</artifactId>
 	<version>1.0.0</version>
-	<name>GenericAppIntellij</name>
+	<name>PostalCodeServiceGeonames</name>
 
 	<properties>
 		<java.version>11</java.version>

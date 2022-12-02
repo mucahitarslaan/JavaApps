@@ -1,5 +1,9 @@
 package com.mucahitarslan.application.rest.postalcode.data.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Set;
@@ -12,8 +16,15 @@ public class PostalCode {
     public int postalCode;
 
     @Column(name = "creation_date_time")
-    public LocalDateTime creationDateTime;
+    public LocalDateTime creationDateTime = LocalDateTime.now();
 
     @OneToMany(mappedBy = "postalCode", cascade = CascadeType.ALL,fetch = FetchType.EAGER)
     public Set<PostalCodeInfo> postalCodeInfos;
+
+    public PostalCode(int postalCode) {
+        this.postalCode = postalCode;
+    }
+
+    public PostalCode() {
+    }
 }

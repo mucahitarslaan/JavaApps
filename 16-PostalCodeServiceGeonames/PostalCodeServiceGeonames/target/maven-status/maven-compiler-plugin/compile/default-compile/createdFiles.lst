@@ -1,1 +1,15 @@
+com/mucahitarslan/application/rest/postalcode/geonames/json/dto/PostalCodeInfoGeoNames.class
+com/mucahitarslan/application/rest/postalcode/geonames/json/dto/StatusJSON.class
+com/mucahitarslan/application/rest/postalcode/data/dal/PostalCodeServiceHelper.class
 com/mucahitarslan/application/App.class
+com/mucahitarslan/application/rest/postalcode/data/repository/IPostalCodeInfoRepository.class
+com/mucahitarslan/application/rest/postalcode/configuration/RestTemplateConfig.class
+com/mucahitarslan/application/rest/postalcode/mapper/PostalCodeMapper.class
+com/mucahitarslan/application/rest/postalcode/geonames/json/dto/PostalCodeGeoNames.class
+com/mucahitarslan/application/rest/postalcode/data/repository/IPostalCodeRepository.class
+com/mucahitarslan/application/rest/postalcode/data/entity/PostalCode.class
+com/mucahitarslan/application/rest/postalcode/service/PostalCodeAppService.class
+com/mucahitarslan/application/rest/postalcode/mapper/IPostalCodeMapper.class
+com/mucahitarslan/application/rest/postalcode/dto/PostalCodeInfoDTO.class
+com/mucahitarslan/application/rest/postalcode/data/entity/PostalCodeInfo.class
+com/mucahitarslan/application/rest/postalcode/controller/PostalCodeGeonamesController.class

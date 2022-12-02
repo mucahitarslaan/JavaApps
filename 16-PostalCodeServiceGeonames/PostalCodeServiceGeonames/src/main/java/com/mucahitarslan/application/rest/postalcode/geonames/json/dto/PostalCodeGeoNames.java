@@ -5,8 +5,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PostalCodeInfoJSON {
+public class PostalCodeGeoNames {
     @JsonProperty("postalcodes")
-    public final List<PostalCodeJSON> postalCodesJSONS = new ArrayList<>();
+    public final List<PostalCodeInfoGeoNames> postalCodeGeoNames = new ArrayList<>();
     public StatusJSON statusJSON;
 }

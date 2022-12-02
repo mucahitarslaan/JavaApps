@@ -1,1 +1,14 @@
-/Users/admin/Documents/JavaApps/GenericAppIntellij/src/main/java/com/mucahitarslan/application/App.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/configuration/RestTemplateConfig.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/geonames/json/dto/StatusJSON.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/service/PostalCodeAppService.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/data/repository/IPostalCodeInfoRepository.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/data/dal/PostalCodeServiceHelper.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/mapper/IPostalCodeMapper.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/data/entity/PostalCode.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/geonames/json/dto/PostalCodeGeoNames.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/dto/PostalCodeInfoDTO.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/geonames/json/dto/PostalCodeInfoGeoNames.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/controller/PostalCodeGeonamesController.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/App.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/data/repository/IPostalCodeRepository.java
+/Users/admin/Documents/JavaApps/16-PostalCodeServiceGeonames/PostalCodeServiceGeonames/src/main/java/com/mucahitarslan/application/rest/postalcode/data/entity/PostalCodeInfo.java
