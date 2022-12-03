@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -36,7 +35,7 @@ public class PostalCodeAppService {
     public List<PostalCodeInfoDTO> getAndSavePostalCodes(int postalCode)
     {
         String url = String.format(urlTemplete, postalCode);
-        var postalCodes = Objects.requireNonNull(restTemplate.getForObject(url, PostalCodeGeoNames.class))
+        var postalCodes = Objects.requireNonNull(restTemplate.getForObject(url, PostalCodeGeoNames.class), "Geonames get errors")
                 .postalCodeGeoNames;
         var pc = postalCodeServiceHelper.savePostalCode(new PostalCode(postalCode));
 

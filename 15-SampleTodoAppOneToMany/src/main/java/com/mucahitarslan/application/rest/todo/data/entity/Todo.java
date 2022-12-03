@@ -29,4 +29,5 @@ public class Todo{//POJO (Plain Old Java Object)
 
     @OneToMany(mappedBy = "todo", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     public Set<Item> items;
+
 }
