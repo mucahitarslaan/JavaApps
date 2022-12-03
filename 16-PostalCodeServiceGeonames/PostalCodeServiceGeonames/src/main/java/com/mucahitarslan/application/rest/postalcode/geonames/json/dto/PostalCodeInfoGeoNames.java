@@ -8,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PostalCodeInfoGeoNames {
-    private com.mucahitarslan.application.rest.postalcode.data.entity.PostalCode postalCode;
     public String adminName1;
     public String adminCode1;
     public String placeName;
@@ -16,5 +15,4 @@ public class PostalCodeInfoGeoNames {
     public double latitude;
     @JsonProperty("lng")
     public double longitude;
-
 }
