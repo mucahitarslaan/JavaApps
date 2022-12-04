@@ -9,8 +9,17 @@
         <module name="011-MovieServiceApplicationJDBC" />
         <module name="12-MovieServiceApplicationJDBC" />
         <module name="MovieRestServiceApplication" />
-        <module name="18-MovieServiceApplication" />
         <module name="GenericAppIntelliJ" />
+      </profile>
+      <profile name="Annotation profile for MovieServiceApplication" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+        </processorPath>
+        <module name="18-MovieServiceApplication" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -30,6 +30,11 @@ public class MovieServiceApplicationDAL {
         return doWorkForRepository(() -> findMoviesByMonthYear(month,year), "MovieServiceApplicationDAL.findMoviesByMonthYear");
     }
 
+    public Iterable<Movie> findMoviesByYear(int year)
+    {
+        return doWorkForRepository(() -> movieRepository.findMoviesByYear(year), "MovieServiceApplicationDAL.findMoviesByYear");
+    }
+
 
     public Movie saveMovie(Movie movie)
     {

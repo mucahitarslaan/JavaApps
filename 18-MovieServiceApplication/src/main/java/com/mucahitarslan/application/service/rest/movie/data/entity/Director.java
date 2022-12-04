@@ -3,8 +3,6 @@ package com.mucahitarslan.application.service.rest.movie.data.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -21,8 +19,10 @@ public class Director {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "director_id")
     public long id;
+
     @Column(nullable = false)
     public String name;
+
     @Column(name = "birth_date",nullable = false)
     public LocalDate birthdate;
 

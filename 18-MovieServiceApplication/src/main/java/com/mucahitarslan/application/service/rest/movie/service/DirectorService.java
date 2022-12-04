@@ -1,8 +1,8 @@
 package com.mucahitarslan.application.service.rest.movie.service;
 
-import com.mucahitarslan.application.service.rest.movie.converter.DirectorConverter;
 import com.mucahitarslan.application.service.rest.movie.data.dal.MovieServiceApplicationDAL;
 import com.mucahitarslan.application.service.rest.movie.dto.DirectorDTO;
+import com.mucahitarslan.application.service.rest.movie.mapper.IDirectorMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,23 +15,23 @@ import static org.csystem.util.data.DatabaseUtil.doWorkForService;
 public class DirectorService
 {
     private final MovieServiceApplicationDAL movieServiceApplicationDAL;
-    private final DirectorConverter directorConverter;
+    private final IDirectorMapper directorMapper;
 
-    public DirectorService(MovieServiceApplicationDAL movieServiceApplicationDAL, DirectorConverter directorConverter) {
+    public DirectorService(MovieServiceApplicationDAL movieServiceApplicationDAL, IDirectorMapper directorMapper) {
         this.movieServiceApplicationDAL = movieServiceApplicationDAL;
-        this.directorConverter = directorConverter;
+        this.directorMapper = directorMapper;
     }
 
     private DirectorDTO saveDirectorCallback(DirectorDTO directorDTO)
     {
-        movieServiceApplicationDAL.saveDirector(directorConverter.toDirector(directorDTO));
+        movieServiceApplicationDAL.saveDirector(directorMapper.toDirector(directorDTO));
         return directorDTO;
     }
 
     private List<DirectorDTO> findAllDirectorsCallback()
     {
         return StreamSupport.stream(movieServiceApplicationDAL.findAllDirectors().spliterator(),false)
-                .map(directorConverter::toDirectorDTO)
+                .map(directorMapper::toDirectorDTO)
                 .collect(Collectors.toList());
     }
 

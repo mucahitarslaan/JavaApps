@@ -19,14 +19,19 @@ public class Movie {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "movie_id")
     public long id;
+
     @Column(nullable = false)
     public String name;
+
     @Column(name = "scene_time",nullable = false)
     public LocalDate sceneTime;
+
     @Column(nullable = false)
     public long rating;
+
     @Column(nullable = false)
     public BigDecimal cost;
+
     public float imdb;
 
     @ManyToMany(mappedBy = "movies", fetch = FetchType.LAZY)

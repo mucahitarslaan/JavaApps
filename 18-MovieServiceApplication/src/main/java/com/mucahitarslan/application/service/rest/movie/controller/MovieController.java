@@ -52,6 +52,18 @@ public class MovieController {
         return responseEntity;
     }
 
+    @GetMapping("/count")
+    public long count()
+    {
+        return subscribe(movieService::countMovies, ex -> -1L);
+    }
+
+    public ResponseEntity<Object> saveMovie(@RequestBody MovieDTO movieDTO)
+    {
+        return subscribe(() -> ResponseEntity.ok(movieService.saveMovie(movieDTO)),
+                ex -> new ResponseEntity<>(new ErrorInfo(ex.getMessage() , null), HttpStatus.BAD_REQUEST));
+    }
+
     /*
     @GetMapping("/info/detail")
     public ResponseEntity<List<MovieDetailDTO>> findMoviesDetailsByYear(@RequestParam("year") String yearStr) {
@@ -73,16 +85,4 @@ public class MovieController {
     }
 
      */
-
-    @GetMapping("/count")
-    public long count()
-    {
-        return subscribe(movieService::countMovies, ex -> -1L);
-    }
-
-    public ResponseEntity<Object> saveMovie(@RequestBody MovieDTO movieDTO)
-    {
-        return subscribe(() -> ResponseEntity.ok(movieService.saveMovie(movieDTO)),
-                ex -> new ResponseEntity<>(new ErrorInfo(ex.getMessage() , null), HttpStatus.BAD_REQUEST));
-    }
 }
