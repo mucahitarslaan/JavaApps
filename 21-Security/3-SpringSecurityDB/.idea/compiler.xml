@@ -7,15 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="1-SpringSecurity" />
-        <module name="2-SpringSecurityInMemory" />
         <module name="GenericAppIntelliJ" />
+        <module name="3-SpringSecurityDB" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="1-SpringSecurity" options="-parameters" />
-      <module name="2-SpringSecurityInMemory" options="-parameters" />
+      <module name="3-SpringSecurityDB" options="-parameters" />
       <module name="GenericAppIntelliJ" options="-parameters" />
     </option>
   </component>
