@@ -17,4 +17,10 @@ public class UserController {
     {
         return "Dashboard - Login";
     }
+
+    @GetMapping("/admin")
+    public String adminPage()
+    {
+        return "Admin Page";
+    }
 }
